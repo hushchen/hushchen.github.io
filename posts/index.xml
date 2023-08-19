@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on HERO</title>
+    <link>https://hushchen.github.io/posts/</link>
+    <description>Recent content in Posts on HERO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© Athul</copyright><atom:link href="https://hushchen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Pages 快速架設網站</title>
+      <link>https://hushchen.github.io/posts/hushbloggithub_io_training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hushchen.github.io/posts/hushbloggithub_io_training/</guid>
+      <description>Github Pages提供了一個快速便利的靜態網頁空間, 非常適合架設個人網站或是部落格, 以下方法介壽如何利用Github Pages架設網站.
+首先,先在Github註冊一個帳號, 並在這個帳號底下建立一個Repositor,這個Repositor是用來管理Github Pages的內容,
+需要注意Repositor命名方式,以註冊帳號為命名:name.github.io
+接下來準備一個Hello Word的index.html檔案,html內容如何編寫可以在網路上找到範例, 完成後將該index.html放入Repositor中. 並在此Repositor中編寫readme.md檔案,該檔案是用於github中的說明,與網站內容無關.
+以上完成後,開啟網頁https://yourname.github.io/,可以看到Hellow Word網頁, 網頁架設即完成囉.</description>
+    </item>
+    
+  </channel>
+</rss>
