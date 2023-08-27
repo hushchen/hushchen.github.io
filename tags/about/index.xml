@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on HERO</title>
+    <link>https://hushchen.github.io/tags/about/</link>
+    <description>Recent content in About on HERO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hushchen.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About HERO</title>
+      <link>https://hushchen.github.io/about/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hushchen.github.io/about/</guid>
+      <description>It&amp;rsquo;s a personal blog that named by my family member&amp;rsquo;s name.
+Main Author - Hush
+Electronics Engineer
+VHDL/Verilog RTL Design FPGA/Backplane/Data Path/Memory Digital Circuit Design Power System Hardware/Firmware co-design Team Manager
+Lead Hardware/Firmware/Mechanical Team Focus on Automatic Test Equipment Product Hardware Team
+Power System System Control Architecture Pin Function Circiut Device Power Supply Precision Measurement Unit Waveform Generator Waveform Digitizer Firmware Team
+Firmware Function/Interface Design System Integration/Verification Data Analysis Mechanical Team</description>
+    </item>
+    
+  </channel>
+</rss>

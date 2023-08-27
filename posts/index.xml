@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sat, 19 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hushchen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hushchen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MMCM Unlocked - Vivado Simulation</title>
+      <link>https://hushchen.github.io/posts/hushfpgammcm_unlocked/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hushchen.github.io/posts/hushfpgammcm_unlocked/</guid>
+      <description>In a project, the target component is Xilinx Ultrascale Kintex series. We do the RTL simulation using Vivado. I encountered the MMCM can&amp;rsquo;t be locked situation seval times.
+Sometimes I forgot how to solve this problem that spend me some hours to found the root cause. For the reason, I record this issue here.
+There is a IP compoent used in the project - STARTUP 3. Because we design a on-line update configuration function that will be integrated with the STARTUP 3 component.</description>
+    </item>
+    
     <item>
       <title>Github Pages 快速架設網站</title>
       <link>https://hushchen.github.io/posts/hushbloggithub_io_training/</link>
