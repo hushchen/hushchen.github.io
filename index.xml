@@ -7,48 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hushchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hushchen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About HERO</title>
       <link>https://hushchen.github.io/about/</link>
       <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://hushchen.github.io/about/</guid>
-      <description>It&amp;rsquo;s a personal blog that named by my family member&amp;rsquo;s name.
-Main Author - Hush
-Electronics Engineer
-VHDL/Verilog RTL Design FPGA/Backplane/Data Path/Memory Digital Circuit Design Power System Hardware/Firmware co-design Team Manager
-Lead Hardware/Firmware/Mechanical Team Focus on Automatic Test Equipment Product Hardware Team
-Power System System Control Architecture Pin Function Circiut Device Power Supply Precision Measurement Unit Waveform Generator Waveform Digitizer Firmware Team
-Firmware Function/Interface Design System Integration/Verification Data Analysis Mechanical Team</description>
+      <description>It&amp;rsquo;s a personal blog that named by my family member&amp;rsquo;s name.&#xA;Main Author - Hush&#xA;Electronics Engineer&#xA;VHDL/Verilog RTL Design FPGA/Backplane/Data Path/Memory Digital Circuit Design Power System Hardware/Firmware co-design Team Manager&#xA;Lead Hardware/Firmware/Mechanical Team Focus on Automatic Test Equipment Product Hardware Team&#xA;Power System System Control Architecture Pin Function Circiut Device Power Supply Precision Measurement Unit Waveform Generator Waveform Digitizer Firmware Team&#xA;Firmware Function/Interface Design System Integration/Verification Data Analysis Mechanical Team</description>
     </item>
-    
     <item>
       <title>MMCM Unlocked - Vivado Simulation</title>
       <link>https://hushchen.github.io/posts/hushfpgammcm_unlocked/</link>
       <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://hushchen.github.io/posts/hushfpgammcm_unlocked/</guid>
-      <description>In a project, the target component is Xilinx Ultrascale Kintex series. We do the RTL simulation using Vivado. I encountered the MMCM can&amp;rsquo;t be locked situation seval times.
-Sometimes I forgot how to solve this problem that spend me some hours to found the root cause. For the reason, I record this issue here.
-There is a IP compoent used in the project - STARTUP 3. Because we design a on-line update configuration function that will be integrated with the STARTUP 3 component.</description>
+      <description>In a project, the target component is Xilinx Ultrascale Kintex series. We do the RTL simulation using Vivado. I encountered the MMCM can&amp;rsquo;t be locked situation seval times.&#xA;Sometimes I forgot how to solve this problem that spend me some hours to found the root cause. For the reason, I record this issue here.&#xA;There is a IP compoent used in the project - STARTUP 3. Because we design a on-line update configuration function that will be integrated with the STARTUP 3 component.</description>
     </item>
-    
     <item>
       <title>Github Pages 快速架設網站</title>
       <link>https://hushchen.github.io/posts/hushbloggithub_io_training/</link>
       <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://hushchen.github.io/posts/hushbloggithub_io_training/</guid>
-      <description>Github Pages提供了一個快速便利的靜態網頁空間,非常適合架設個人網站或是部落格.
-以下方法介壽如何利用Github Pages架設網站.
-首先,先在Github註冊一個帳號, 並在這個帳號底下建立一個Repositor,這個Repositor是用來管理Github Pages的內容.
-需要注意Repositor命名方式,以註冊帳號為命名:name.github.io
-接下來準備一個Hello Word的index.html檔案,html內容如何編寫可以在網路上找到範例.
-完成後將該index.html放入Repositor中.
-並在此Repositor中編寫readme.md檔案,該檔案是用於github中的說明,與網站內容無關.
-以上完成後,開啟網頁https://yourname.github.io/,可以看到Hellow Word網頁, 網頁架設即完成囉.</description>
+      <description>Github Pages提供了一個快速便利的靜態網頁空間,非常適合架設個人網站或是部落格.&#xA;以下方法介壽如何利用Github Pages架設網站.&#xA;首先,先在Github註冊一個帳號, 並在這個帳號底下建立一個Repositor,這個Repositor是用來管理Github Pages的內容.&#xA;需要注意Repositor命名方式,以註冊帳號為命名:name.github.io&#xA;接下來準備一個Hello Word的index.html檔案,html內容如何編寫可以在網路上找到範例.&#xA;完成後將該index.html放入Repositor中.&#xA;並在此Repositor中編寫readme.md檔案,該檔案是用於github中的說明,與網站內容無關.&#xA;以上完成後,開啟網頁https://yourname.github.io/,可以看到Hellow Word網頁, 網頁架設即完成囉.</description>
     </item>
-    
   </channel>
 </rss>
