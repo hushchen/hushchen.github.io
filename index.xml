@@ -4,11 +4,18 @@
     <title>HERO</title>
     <link>https://hushchen.github.io/</link>
     <description>Recent content on HERO</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>怡辰老師的高效時間管理課</title>
+      <link>https://hushchen.github.io/posts/hushbookefficiency/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushbookefficiency/</guid>
+      <description>時間管理是個假議題 時間管理是個假議題,重點不再短時間內能做多少事情,也不只是著重高效率就好. 更完整的說,時間管理應該是人生管理,意念管理,情緒管理,資源管理,價值觀管理,經歷管理,關係管理. 罐子哲學 時間就像一個罐子 待處理的事務就像大石頭與小石頭和沙子,體積越大代表越重要 如果在罐子中塞滿了沙子和小石頭,那大石頭就沒有空間放入了 反之,如果先放入大石頭,再放入小石頭,最後在將沙子塞入縫隙中,卻可以裝載更多的物件 凡事 - 要事第一 附註:教養就像一場不跟別人比較的馬拉松,選擇正確的目標,將目光投注於遙遠的彼端,以遠見洞悉未來樣貌,進而產生堅定信念,有困難我們一起想辦法解決. 怡辰老師分享的學習經驗 本來的作法 - 先扣掉吃飯洗澡睡覺的必要時間,再填上課家教時間,空白的區段在填上讀書,社團等時間, 按表操課,最後發現時間估算預留不足,照表操課是理想. 後來的作法 - 要事第一,上課前預習,上課認真聽吸收多,當天馬上複習,效果最好,考慮體力狀態, 早晨體力佳先運動,再讀書,累了就上圖書館借書或用零碎時間洗衣服碗筷等,晚上想睡覺先去洗個澡,回來再讀書. 壓力大,可以找一些對自己來說是舒壓的事情,目標重要也要懂得欣賞人生路上的風景. 工作上不要輕諾,學習如何說不 站在個人角度找出替代方案 站在對方角度找出替代方案 爭取對方諒解,提供可行的承諾 利用槓桿原理讓工作更省力 小心過度追求完美 將完美放在重要的事情上 放下不必要的完美主義 用成長性思維取代完美主義 延伸在專案管理上相同的概念即為敏捷管理 權滿老師智慧小語:標籤是自己貼的,而我們可以選擇換一個標籤. 淇華老師智慧小語:有些人活在過去,有些人只看現在,但我們要有活在未來的能力. 如何找到自己的北極星 如何設定目標呢? 不知道自己的目標? 尋求目標的方法&#xA;方法一:SMART原則 Specific 明確 Measurable 可衡量 Achievable 可實現 Realistic 切實可行 Time-Bound 有時間限制 舉例1: 我希望今年更健康 - 不符合SMART原則 舉例2: 今年每周至少慢跑一次,一次至少三十分鐘 - 明確目標,可衡量,可實現,切實可行,有時間限制 延伸閱讀:鬼速PDCA 方法一:人生腳本法 九宮格法 - 曼陀羅計畫表: 成功案例大谷翔平 時間軸+50大目標 執行 - 善用策略,繪製你的地圖,放路標 將大目標拆解成易達成的小目標 時間管理矩陣圖 分類 完成 刪除 長期緊繃小心彈性疲乏 培養執行力與習慣 - 不管甚麼事,立即動手 學習選擇性放棄 明確區分大小事 確認截止時程 盤點時間分配比重 習慣自然成為規律 打破意志力迷思 - 不要相信你的意志力 松下幸之助: 登峰造極的成就源自於自律,有規律地為一個目標主動採取行動,堅持一天,再堅持一天,又堅持一天,直到成為習慣.</description>
+    </item>
     <item>
       <title>2024 真無線藍芽耳機購買記</title>
       <link>https://hushchen.github.io/posts/hushbudsnuarl_mini3/</link>
@@ -36,6 +43,13 @@
       <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/posts/hushbloggithub_io_training/</guid>
       <description>Github Pages提供了一個快速便利的靜態網頁空間,非常適合架設個人網站或是部落格.&#xA;以下方法介壽如何利用Github Pages架設網站.&#xA;首先,先在Github註冊一個帳號, 並在這個帳號底下建立一個Repositor,這個Repositor是用來管理Github Pages的內容.&#xA;需要注意Repositor命名方式,以註冊帳號為命名:name.github.io&#xA;接下來準備一個Hello Word的index.html檔案,html內容如何編寫可以在網路上找到範例.&#xA;完成後將該index.html放入Repositor中.&#xA;並在此Repositor中編寫readme.md檔案,該檔案是用於github中的說明,與網站內容無關.&#xA;以上完成後,開啟網頁https://yourname.github.io/,可以看到Hellow Word網頁, 網頁架設即完成囉.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://hushchen.github.io/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</guid>
+      <description>高效率自我實踐篇&#xA;早起: 做最困難的事情 - 運動 原因: 下班後體力不佳,時常怠惰 成效: 中午比較好入眠休息,辦公室工作的腰酸背痛問題緩解 延伸: 做甚麼運動的內容&#xA;進公司後: 首要工作項目為安排今日所需要工作的清單 原因: 工作按照一定的路線走,不會偏移軌道,人都需要一個可以依循的路線 成效: 工作安排,杯子原理, 方法: 週間筆記本, PDCA方法, 表格化 P, D, C, A,四個區塊 延伸: 需要進階閱讀8020理論&#xA;3, 為來改善目標: 納入自我成長動能的PDCA方法</description>
     </item>
   </channel>
 </rss>
