@@ -7,40 +7,47 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sat, 04 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Travelogue</title>
+      <link>https://hushchen.github.io/tags/travelogue/</link>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/tags/travelogue/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Book</title>
       <link>https://hushchen.github.io/tags/book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>3C</title>
       <link>https://hushchen.github.io/tags/3c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/tags/3c/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
       <link>https://hushchen.github.io/tags/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/tags/about/</guid>
       <description></description>
     </item>
     <item>
       <title>FPGA</title>
       <link>https://hushchen.github.io/tags/fpga/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/tags/fpga/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
       <link>https://hushchen.github.io/tags/web/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/tags/web/</guid>
       <description></description>
     </item>

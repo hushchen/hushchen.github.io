@@ -8,14 +8,16 @@
   <meta property="og:site_name" content="HERO">
   <meta property="og:title" content="Github Pages 快速架設網站">
   <meta property="og:description" content="Web Technology">
-  <meta property="og:locale" content="zh-tw">
+  <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-08-19T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-08-19T00:00:00+00:00">
     <meta property="article:tag" content="Web">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Github Pages 快速架設網站">
-<meta name="twitter:description" content="Web Technology">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Github Pages 快速架設網站">
+  <meta name="twitter:description" content="Web Technology">
 <script src="https://hushchen.github.io/js/feather.min.js"></script>
 	
 	
@@ -129,24 +131,25 @@
 			
 		</div>
 		<div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function () {
-        
-        
-        if (window.location.hostname == "localhost")
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
             return;
-
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        var disqus_shortname = 'hushchen-github-io';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hushchen-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
 </main>
 <footer>
   <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" rel="me" title="GitHub"><i data-feather="github"></i></a>
@@ -184,8 +187,6 @@
     </body>
     <body>
         
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
       <script>
         var doNotTrack = false;
@@ -200,8 +201,5 @@
           gtag('config', 'G-NN0XH6L3VC');
         }
       </script>
-    
-  
-
     </body>
 </html>

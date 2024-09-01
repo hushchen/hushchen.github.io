@@ -14,11 +14,13 @@
 早起: 做最困難的事情 - 運動 原因: 下班後體力不佳,時常怠惰 成效: 中午比較好入眠休息,辦公室工作的腰酸背痛問題緩解 延伸: 做甚麼運動的內容
 進公司後: 首要工作項目為安排今日所需要工作的清單 原因: 工作按照一定的路線走,不會偏移軌道,人都需要一個可以依循的路線 成效: 工作安排,杯子原理, 方法: 週間筆記本, PDCA方法, 表格化 P, D, C, A,四個區塊 延伸: 需要進階閱讀8020理論
 3, 為來改善目標: 納入自我成長動能的PDCA方法">
-  <meta property="og:locale" content="zh-tw">
+  <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="">
-<meta name="twitter:description" content="高效率自我實踐篇
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HERO">
+  <meta name="twitter:description" content="高效率自我實踐篇
 早起: 做最困難的事情 - 運動 原因: 下班後體力不佳,時常怠惰 成效: 中午比較好入眠休息,辦公室工作的腰酸背痛問題緩解 延伸: 做甚麼運動的內容
 進公司後: 首要工作項目為安排今日所需要工作的清單 原因: 工作按照一定的路線走,不會偏移軌道,人都需要一個可以依循的路線 成效: 工作安排,杯子原理, 方法: 週間筆記本, PDCA方法, 表格化 P, D, C, A,四個區塊 延伸: 需要進階閱讀8020理論
 3, 為來改善目標: 納入自我成長動能的PDCA方法">
@@ -130,24 +132,25 @@
 			
 		</div>
 		<div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function () {
-        
-        
-        if (window.location.hostname == "localhost")
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
             return;
-
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        var disqus_shortname = 'hushchen-github-io';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hushchen-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
 </main>
 <footer>
   <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" rel="me" title="GitHub"><i data-feather="github"></i></a>
@@ -185,8 +188,6 @@
     </body>
     <body>
         
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
       <script>
         var doNotTrack = false;
@@ -201,8 +202,5 @@
           gtag('config', 'G-NN0XH6L3VC');
         }
       </script>
-    
-  
-
     </body>
 </html>
