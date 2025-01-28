@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>pyenv introduction - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="pyenv introduction" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://hushchen.github.io/posts/hushpyenv_learning_1/">
+  <meta property="og:site_name" content="HERO">
+  <meta property="og:title" content="pyenv introduction">
+  <meta property="og:description" content="pyenv introduction">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-28T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="pyenv introduction">
+  <meta name="twitter:description" content="pyenv introduction">
+<script src="https://hushchen.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hushchen.github.io/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hushchen.github.io/css/main.d902908ac6e0fab67957de5db5aea1b6455b19ae2ca98eac4c95a4a0fdc02238.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://hushchen.github.io/css/dark.c95c5dcf5f32f8b67bd36f7dab66680e068fce2b303087294114aabf7a7c080b.css"   />
+	
+
+	
+	
+		<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://hushchen.github.io/">HERO</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">pyenv introduction</h1>
+			<div class="meta">Posted on Jan 28, 2025</div>
+		</div>
+		
+
+		<section class="body">
+			<h3 id="abratraction">Abratraction</h3>
+<p>最近開始學習Python,過去也偶爾會使用到開源專案,部分開源專案會使用Python來開發,
+一直以來想要學習Python,卻沒有下定決心偶碰一下,直到近來AI興起,我個人覺得正式學習程式語言的一大契機,
+下次再分享為何是一大契機,通常在使用Python最常遇到的問題就是版本多,部分套件會有不相容情況,因此這一次
+將學習如何使用<code>pyenv</code>來隔離Python與切換版本的技巧,完成後可以透過<code>pyenv global</code>來設定全域的
+Python版本,<code>pyenv local</code>來設定資料夾本地的Python,在電腦中安裝多版本的Python也能夠做好有效的切換控制.</p>
+<h3 id="methond">Methond</h3>
+<p>首先,在原本Windows的環境中安裝Python,就會依同安裝Python Launcher啟動器,透過啟動器也可以做好切換,
+例如使用<code>py -2 -m pip install requests  # 執行 Python 2</code>,<code>py -3 -m pip install requests  # 執行 Python 3</code>,
+指令<code>py</code>是Windows中的Python Launcher,透過Launcher來啟動特定版本的Python,
+而執行<code>python</code>則是直接執行 Python 解譯器,沒有切換版本的功能,Python Launcher的缺點是Windows才有,
+非跨平台工具,且無法安裝多種次版本在同一台主機上,例如<code>3.11.5</code>及<code>3.11.3</code>.</p>
+<p>另外一個選擇就是<strong>pyenv</strong>工具,其本身為一種Linux系統上的工具,沒有Windows版本,後來有貢獻者將其修改為
+Windows版本<a href="https://github.com/pyenv-win/pyenv-win">Project pyenv-win</a>,下列也簡述為<code>pyenv</code>,
+安裝方法參考官方安裝文件利用PowerShell Script安裝.</p>
+<p>安裝完成後,會在系統環境變數中看到出現了出現了兩個新的Path.
+<img src="/posts/pic/pyenv_environment_variable.png" alt="Environment_Variable"></p>
+<p>安裝完成後,在<code>Command Prompt</code>或是<code>powershell</code>console中執行<code>pyenv versions</code>指令,會發現目前並無安裝的Python版本,
+依照個人經驗,<code>pyenv</code>可能未包含比較新版本的安裝清單,因此我們先執行<code>pyenv update</code>來更新清單,
+更新完畢後即可以執行<code>pyenv install -l</code>查看目前可以安裝的Python版本清單,<code>pyenv install 3.12.8</code>即會開始安裝<code>3.12.8</code>版本,</p>
+<p>安裝完成後,可以分別設定<code>global</code>及<code>local</code>的Python版本,<code>global</code>屬於全域的設定,
+如果在開發資料夾中,希望設定該資料夾的Python版本,可以使用<code>pyenv local &lt;python_version&gt;</code>來設定該資料夾所使用的Python,
+並且會在該資料夾中創造出一個<code>.python-version</code>的檔案,檔案內即紀錄local python版本.</p>
+<h3 id="conclution">Conclution</h3>
+<p>經過上述步驟後,即可以安裝<code>pyenv</code>工具,並開始進行Python版本的控制,
+不過在實務開發上,需搭配<code>Poetry</code>來使用會更加清楚控制Python版本及Package,未來再另外分享.</p>
+<h3 id="reference">Reference</h3>
+<ol>
+<li><a href="https://hackmd.io/@meebox/Sy1QtFUOa">管理多版本的 Python 環境&ndash;pyenv</a></li>
+<li><a href="https://josix.tw/pyenv-deep-dive/">建立一個方便開發的 Python 環境 （零）- 使用 Pyenv 管理 Python 版本</a></li>
+<li><a href="https://pythonbook.cc/">為自己學Python - 高見龍</a></li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/python">Python</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hushchen-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2025  © Athul |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NN0XH6L3VC');
+        }
+      </script>
+    
+  
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+    <body>
+        
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NN0XH6L3VC');
+        }
+      </script>
+    </body>
+</html>
