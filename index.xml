@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pyenv introduction</title>
+      <link>https://hushchen.github.io/posts/hushpyenv_learning_1/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushpyenv_learning_1/</guid>
+      <description>Abratraction 最近開始學習Python,過去也偶爾會使用到開源專案,部分開源專案會使用Python來開發, 一直以來想要學習Python,卻沒有下定決心偶碰一下,直到近來AI興起,我個人覺得正式學習程式語言的一大契機, 下次再分享為何是一大契機,通常在使用Python最常遇到的問題就是版本多,部分套件會有不相容情況,因此這一次 將學習如何使用pyenv來隔離Python與切換版本的技巧,完成後可以透過pyenv global來設定全域的 Python版本,pyenv local來設定資料夾本地的Python,在電腦中安裝多版本的Python也能夠做好有效的切換控制.&#xA;Methond 首先,在原本Windows的環境中安裝Python,就會依同安裝Python Launcher啟動器,透過啟動器也可以做好切換, 例如使用py -2 -m pip install requests # 執行 Python 2,py -3 -m pip install requests # 執行 Python 3, 指令py是Windows中的Python Launcher,透過Launcher來啟動特定版本的Python, 而執行python則是直接執行 Python 解譯器,沒有切換版本的功能,Python Launcher的缺點是Windows才有, 非跨平台工具,且無法安裝多種次版本在同一台主機上,例如3.11.5及3.11.3.&#xA;另外一個選擇就是pyenv工具,其本身為一種Linux系統上的工具,沒有Windows版本,後來有貢獻者將其修改為 Windows版本Project pyenv-win,下列也簡述為pyenv, 安裝方法參考官方安裝文件利用PowerShell Script安裝.&#xA;安裝完成後,會在系統環境變數中看到出現了出現了兩個新的Path. 安裝完成後,在Command Prompt或是powershellconsole中執行pyenv versions指令,會發現目前並無安裝的Python版本, 依照個人經驗,pyenv可能未包含比較新版本的安裝清單,因此我們先執行pyenv update來更新清單, 更新完畢後即可以執行pyenv install -l查看目前可以安裝的Python版本清單,pyenv install 3.12.8即會開始安裝3.12.8版本,&#xA;安裝完成後,可以分別設定global及local的Python版本,global屬於全域的設定, 如果在開發資料夾中,希望設定該資料夾的Python版本,可以使用pyenv local &amp;lt;python_version&amp;gt;來設定該資料夾所使用的Python, 並且會在該資料夾中創造出一個.python-version的檔案,檔案內即紀錄local python版本.&#xA;Conclution 經過上述步驟後,即可以安裝pyenv工具,並開始進行Python版本的控制, 不過在實務開發上,需搭配Poetry來使用會更加清楚控制Python版本及Package,未來再另外分享.&#xA;Reference 管理多版本的 Python 環境&amp;ndash;pyenv 建立一個方便開發的 Python 環境 （零）- 使用 Pyenv 管理 Python 版本 為自己學Python - 高見龍 </description>
+    </item>
     <item>
       <title>2024暑期旅遊 - 日本九州 Kyusu</title>
       <link>https://hushchen.github.io/posts/herotraveloguekyusu/</link>
