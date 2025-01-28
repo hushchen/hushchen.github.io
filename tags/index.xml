@@ -10,6 +10,13 @@
     <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI</title>
+      <link>https://hushchen.github.io/tags/ai/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Python</title>
       <link>https://hushchen.github.io/tags/python/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>

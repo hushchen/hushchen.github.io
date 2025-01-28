@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on HERO</title>
+    <link>https://hushchen.github.io/tags/ai/</link>
+    <description>Recent content in AI on HERO</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hushchen.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 農曆春節賀卡</title>
+      <link>https://hushchen.github.io/posts/2025cny_card_prompt/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/2025cny_card_prompt/</guid>
+      <description>Prompt 1 I would like to generate a image for Chinese New Year of 2025 which is a snake year. Pleae use the snake element in the picture. The snake is similar to Disney style and cute. Don&amp;rsquo;t open its mouth as well as Don&amp;rsquo;t show the teeth. There are some chinese traditional lamps in the top side of the picture. 單純的燈籠,不包含任何圖樣. There are two kids with in the center and some 金元寶 on the bottom side.</description>
+    </item>
+  </channel>
+</rss>
