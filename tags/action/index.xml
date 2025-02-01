@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Action on HERO</title>
+    <link>http://localhost:1313/tags/action/</link>
+    <description>Recent content in Action on HERO</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Sat, 01 Jan 2000 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/action/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高效率自我實踐篇</title>
+      <link>http://localhost:1313/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</guid>
+      <description>高效率自我實踐篇&#xA;早起: 做最困難的事情 - 運動 原因: 下班後體力不佳,時常怠惰 成效: 中午比較好入眠休息,辦公室工作的腰酸背痛問題緩解 延伸: 做甚麼運動的內容&#xA;進公司後: 首要工作項目為安排今日所需要工作的清單 原因: 工作按照一定的路線走,不會偏移軌道,人都需要一個可以依循的路線 成效: 工作安排,杯子原理, 方法: 週間筆記本, PDCA方法, 表格化 P, D, C, A,四個區塊 延伸: 需要進階閱讀8020理論&#xA;3, 為來改善目標: 納入自我成長動能的PDCA方法</description>
+    </item>
+  </channel>
+</rss>

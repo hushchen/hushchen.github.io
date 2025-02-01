@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>MMCM Unlocked - Vivado Simulation - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="RTL Technology" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>pyenv Poetry workflow - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="pyenv Poetry workflow" />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="https://hushchen.github.io/posts/hushfpgammcm_unlocked/">
+	<meta property="og:url" content="https://hushchen.github.io/posts/hushpyenv_poetry_workflow_1/">
   <meta property="og:site_name" content="HERO">
-  <meta property="og:title" content="MMCM Unlocked - Vivado Simulation">
-  <meta property="og:description" content="RTL Technology">
+  <meta property="og:title" content="pyenv Poetry workflow">
+  <meta property="og:description" content="pyenv Poetry workflow">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-08-26T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-08-26T00:00:00+00:00">
-    <meta property="article:tag" content="FPGA">
+    <meta property="article:published_time" content="2025-02-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-01T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MMCM Unlocked - Vivado Simulation">
-  <meta name="twitter:description" content="RTL Technology">
+  <meta name="twitter:title" content="pyenv Poetry workflow">
+  <meta name="twitter:description" content="pyenv Poetry workflow">
 <script src="https://hushchen.github.io/js/feather.min.js"></script>
 	
 	
@@ -94,25 +94,41 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">MMCM Unlocked - Vivado Simulation</h1>
-			<div class="meta">Posted on Aug 26, 2023</div>
+			<h1 class="title">pyenv Poetry workflow</h1>
+			<div class="meta">Posted on Feb 1, 2025</div>
 		</div>
 		
 
 		<section class="body">
-			<p>In a project, the target component is <strong>Xilinx Ultrascale Kintex series</strong>.
-We do the RTL simulation using Vivado.
-I encountered the <strong>MMCM can&rsquo;t be locked</strong> situation seval times.</p>
-<p>Sometimes I forgot how to solve this problem that spend me some hours to found the root cause.
-For the reason, I record this issue here.</p>
-<p>There is a IP compoent used in the project - <strong>STARTUP 3</strong>.
-Because we design a on-line update configuration function that will be integrated
-with the <strong>STARTUP 3</strong> component.
-Actually the update configuration function works well on the board.
-When we do the simulation, the MMCM is unlocked all the time.
-The main reason is the <strong>STARTUP 3</strong> component.
-We just need to simulate the others functions.
-We use a <strong>SIMULATION_FLAG</strong> to mask the <strong>STARTUP 3</strong> component when simulation.</p>
+			<h2 id="pyenv-poetry-workflow">pyenv Poetry workflow</h2>
+<blockquote>
+<p>首次建構<code>pyenv</code>控制Porject Local Python版本及使用<code>Poetry</code>控制Package安裝,紀錄使用Workflow</p>
+</blockquote>
+<h3 id="abratraction">Abratraction</h3>
+<p>上一篇<a href="https://hushchen.github.io/posts/hushpyenv_learning_1/">pyenv introduction</a>分享使用pyenv控制Python版本,
+雖然可以透過<code>pyenv</code>控制Project Local Python版本,除此之外也希望能夠有效區隔各Project的虛擬環境及Package安裝控制,
+接下來就開始學習如何使用<code>Poetry</code>來協助建立虛擬環境及安裝Project所需要的各式Package.</p>
+<p>最後順利可以進行Project資料夾的<code>pyenv local</code>Python版本設定,並且透過<code>Poetry</code>建立專案虛擬機器環境及Package管理.</p>
+<h3 id="methond">Methond</h3>
+<p>為了避免在開發Python專案時常遇到版本不同所造成的困擾,所以開始學習使用<code>pinenv, Poetry</code>兩套工具,
+以下整理的是自己初次使用的過程,不確定是否正確,但目前為自己可以控制良好運作的一套流程.</p>
+<p>OS: Windows 11, x64 System.</p>
+<p>(1) <code>PowerShell</code> 安裝 <code>pyenv</code> : 確認<code>command prompt</code>可以執行<code>pyenv</code>及環境變數內容正確後,在<code>pyenv</code>下載所需要的Python版本,為了實驗所以下載了兩個不同版本3.12.8及3.11.9</p>
+<p>(2) <code>Scoop</code>安裝<code>pipx</code>,並在<code>pipx</code>下安裝<code>Poetry</code>,並利用<code>pipx</code>建立環境變數後,確認<code>command prompt</code>可以執行<code>Poetry</code>,
+這時<code>Poetry</code>出現訊息指出系統中並無安裝<strong>Python</strong>,在此以前,曾經在系統中自行安裝過Python,後來因為嘗試使用<code>pyenv</code>所以移除原系統中自行安裝的Python,
+依據訊息內容,所以在系統中將Python安裝了回去.系統的Python為3.12.8</p>
+<p>(3) 上述兩個安裝工作完成後,系統架構為 Windows 11 + Python 3.12.8, pyenv versions: 3.11.9 , 3.12.8</p>
+<p>當我執行<code>Poetry new DEMO</code>時, DEMO資料夾下的 <code>pyproject.toml</code> 內容會將被設定為 <code>requires-python = &quot;&gt;=3.12&quot;</code>,
+接下來我希望讓該Project專案為Python 3.11.9版本, 我使用<code>pyenv local 3.11.9</code>將專案設定為 3.11.9, 此時安裝套件時候提示版本不符,
+故修改<code>pyproject.toml</code>內容為<code>requires-python = &quot;&gt;=3.11&quot;</code>,可順利建立虛擬環境及安裝套件.</p>
+<h3 id="conclution">Conclution</h3>
+<p>經過上述步驟後,可以完成<code>pyenv</code>工具建立Project Local Python版本的控制,例外搭配<code>Poetry</code>建立虛擬環境及Package管理安裝,
+所以在<code>Poetry</code>安裝好後,已經將<code>poetry config --list</code>所列出的參數<code>virtualenvs.in-project = false</code>修改為<code>true</code>.</p>
+<h3 id="reference">Reference</h3>
+<ol>
+<li><a href="https://blog.kyomind.tw/python-poetry/">Python 套件管理器——Poetry 完全入門指南</a></li>
+<li><a href="https://pythonbook.cc/">為自己學Python - 高見龍</a></li>
+</ol>
 
 		</section>
 
@@ -122,7 +138,7 @@ We use a <strong>SIMULATION_FLAG</strong> to mask the <strong>STARTUP 3</strong>
 			<nav class="nav tags">
 				<ul class="tags">
 					
-					<li><a href="/tags/fpga">FPGA</a></li>
+					<li><a href="/tags/python">Python</a></li>
 					
 				</ul>
 			</nav>

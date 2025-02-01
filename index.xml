@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pyenv Poetry workflow</title>
+      <link>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_1/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_1/</guid>
+      <description>pyenv Poetry workflow 首次建構pyenv控制Porject Local Python版本及使用Poetry控制Package安裝,紀錄使用Workflow&#xA;Abratraction 上一篇pyenv introduction分享使用pyenv控制Python版本, 雖然可以透過pyenv控制Project Local Python版本,除此之外也希望能夠有效區隔各Project的虛擬環境及Package安裝控制, 接下來就開始學習如何使用Poetry來協助建立虛擬環境及安裝Project所需要的各式Package.&#xA;最後順利可以進行Project資料夾的pyenv localPython版本設定,並且透過Poetry建立專案虛擬機器環境及Package管理.&#xA;Methond 為了避免在開發Python專案時常遇到版本不同所造成的困擾,所以開始學習使用pinenv, Poetry兩套工具, 以下整理的是自己初次使用的過程,不確定是否正確,但目前為自己可以控制良好運作的一套流程.&#xA;OS: Windows 11, x64 System.&#xA;(1) PowerShell 安裝 pyenv : 確認command prompt可以執行pyenv及環境變數內容正確後,在pyenv下載所需要的Python版本,為了實驗所以下載了兩個不同版本3.12.8及3.11.9&#xA;(2) Scoop安裝pipx,並在pipx下安裝Poetry,並利用pipx建立環境變數後,確認command prompt可以執行Poetry, 這時Poetry出現訊息指出系統中並無安裝Python,在此以前,曾經在系統中自行安裝過Python,後來因為嘗試使用pyenv所以移除原系統中自行安裝的Python, 依據訊息內容,所以在系統中將Python安裝了回去.系統的Python為3.12.8&#xA;(3) 上述兩個安裝工作完成後,系統架構為 Windows 11 + Python 3.12.8, pyenv versions: 3.11.9 , 3.12.8&#xA;當我執行Poetry new DEMO時, DEMO資料夾下的 pyproject.toml 內容會將被設定為 requires-python = &amp;quot;&amp;gt;=3.12&amp;quot;, 接下來我希望讓該Project專案為Python 3.11.9版本, 我使用pyenv local 3.11.9將專案設定為 3.11.9, 此時安裝套件時候提示版本不符, 故修改pyproject.toml內容為requires-python = &amp;quot;&amp;gt;=3.11&amp;quot;,可順利建立虛擬環境及安裝套件.&#xA;Conclution 經過上述步驟後,可以完成pyenv工具建立Project Local Python版本的控制,例外搭配Poetry建立虛擬環境及Package管理安裝, 所以在Poetry安裝好後,已經將poetry config --list所列出的參數virtualenvs.</description>
+    </item>
     <item>
       <title>2025 農曆春節賀卡</title>
       <link>https://hushchen.github.io/posts/2025cny_card_prompt/</link>
@@ -64,13 +71,6 @@
       <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/posts/hushbloggithub_io_training/</guid>
       <description>Github Pages提供了一個快速便利的靜態網頁空間,非常適合架設個人網站或是部落格.&#xA;以下方法介壽如何利用Github Pages架設網站.&#xA;首先,先在Github註冊一個帳號, 並在這個帳號底下建立一個Repositor,這個Repositor是用來管理Github Pages的內容.&#xA;需要注意Repositor命名方式,以註冊帳號為命名:name.github.io&#xA;接下來準備一個Hello Word的index.html檔案,html內容如何編寫可以在網路上找到範例.&#xA;完成後將該index.html放入Repositor中.&#xA;並在此Repositor中編寫readme.md檔案,該檔案是用於github中的說明,與網站內容無關.&#xA;以上完成後,開啟網頁https://yourname.github.io/,可以看到Hellow Word網頁, 網頁架設即完成囉.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://hushchen.github.io/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hushchen.github.io/posts/%E9%AB%98%E6%95%88%E7%8E%87%E8%87%AA%E6%88%91%E5%AF%A6%E8%B8%90%E7%AF%87/</guid>
-      <description>高效率自我實踐篇&#xA;早起: 做最困難的事情 - 運動 原因: 下班後體力不佳,時常怠惰 成效: 中午比較好入眠休息,辦公室工作的腰酸背痛問題緩解 延伸: 做甚麼運動的內容&#xA;進公司後: 首要工作項目為安排今日所需要工作的清單 原因: 工作按照一定的路線走,不會偏移軌道,人都需要一個可以依循的路線 成效: 工作安排,杯子原理, 方法: 週間筆記本, PDCA方法, 表格化 P, D, C, A,四個區塊 延伸: 需要進階閱讀8020理論&#xA;3, 為來改善目標: 納入自我成長動能的PDCA方法</description>
     </item>
   </channel>
 </rss>
