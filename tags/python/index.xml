@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project of Poetry workflow</title>
+      <link>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_2/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_2/</guid>
+      <description>Project Development with Poetry workflow 在Python開發專案的過程中,如何操作Poetry來建立虛擬環境及執行程式&#xA;Abratraction 在Python專案開發過程中,使用Poetry來進行套件安裝,虛擬環境建置,以及執行程式,過程中進行套件安裝及管理相當方便, 在開發過程中,遇到的一些環節,在本篇文章中紀錄,利於未來開發時參考.&#xA;Method (1) 建立專案,使用指令Poetry new project_name建立專案.&#xA;(2) 搭配pyenv local指令,建立Project Local Python版本的控制.&#xA;(3) 使用Poetry add在pyproject.toml中新增在專案中需要使用的套件.&#xA;(4) 使用Poetry install指令安裝pyproject.toml中列出的所有套件.&#xA;(5) 使用Poetry show指令查看已安裝的套件,--tree參數可以查看套件的相依性.&#xA;(6) 使用Poetry env info指令查看虛擬環境的相關資訊.&#xA;(7) 舊版本使用Poetry shell指令進入虛擬環境,不過在2.0.1版本後已經不再推薦使用此指令,改使用Poetry env activate來進入虛擬環境, 不過,這裡有一個需要留意的問題,使用powershell遇到沒有啟動的狀況,須改用指令Invoke-Expression (poetry env activate)來啟動虛擬環境.&#xA;(8) 啟動虛擬環境後,使用python --version查看Python版本,此時會發現為pyenv設定的版本.&#xA;(9) 使用python main.py可以直接執行該專案下的main.py程式碼內容.&#xA;Conclusion 上述指令紀錄開發過程中Poetry常用的指令.&#xA;Reference Python 套件管理器——Poetry 完全入門指南 Poetry 2.0.1 改用 poetry env activate </description>
+    </item>
     <item>
       <title>pyenv Poetry workflow</title>
       <link>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_1/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_1/</guid>
-      <description>pyenv Poetry workflow 首次建構pyenv控制Porject Local Python版本及使用Poetry控制Package安裝,紀錄使用Workflow&#xA;Abratraction 上一篇pyenv introduction分享使用pyenv控制Python版本, 雖然可以透過pyenv控制Project Local Python版本,除此之外也希望能夠有效區隔各Project的虛擬環境及Package安裝控制, 接下來就開始學習如何使用Poetry來協助建立虛擬環境及安裝Project所需要的各式Package.&#xA;最後順利可以進行Project資料夾的pyenv localPython版本設定,並且透過Poetry建立專案虛擬機器環境及Package管理.&#xA;Methond 為了避免在開發Python專案時常遇到版本不同所造成的困擾,所以開始學習使用pinenv, Poetry兩套工具, 以下整理的是自己初次使用的過程,不確定是否正確,但目前為自己可以控制良好運作的一套流程.&#xA;OS: Windows 11, x64 System.&#xA;(1) PowerShell 安裝 pyenv : 確認command prompt可以執行pyenv及環境變數內容正確後,在pyenv下載所需要的Python版本,為了實驗所以下載了兩個不同版本3.12.8及3.11.9&#xA;(2) Scoop安裝pipx,並在pipx下安裝Poetry,並利用pipx建立環境變數後,確認command prompt可以執行Poetry, 這時Poetry出現訊息指出系統中並無安裝Python,在此以前,曾經在系統中自行安裝過Python,後來因為嘗試使用pyenv所以移除原系統中自行安裝的Python, 依據訊息內容,所以在系統中將Python安裝了回去.系統的Python為3.12.8&#xA;(3) 上述兩個安裝工作完成後,系統架構為 Windows 11 + Python 3.12.8, pyenv versions: 3.11.9 , 3.12.8&#xA;當我執行Poetry new DEMO時, DEMO資料夾下的 pyproject.toml 內容會將被設定為 requires-python = &amp;quot;&amp;gt;=3.12&amp;quot;, 接下來我希望讓該Project專案為Python 3.11.9版本, 我使用pyenv local 3.11.9將專案設定為 3.11.9, 此時安裝套件時候提示版本不符, 故修改pyproject.toml內容為requires-python = &amp;quot;&amp;gt;=3.11&amp;quot;,可順利建立虛擬環境及安裝套件.&#xA;Conclution 經過上述步驟後,可以完成pyenv工具建立Project Local Python版本的控制,例外搭配Poetry建立虛擬環境及Package管理安裝, 所以在Poetry安裝好後,已經將poetry config --list所列出的參數virtualenvs.</description>
+      <description>pyenv Poetry workflow 首次建構pyenv控制Porject Local Python版本及使用Poetry控制Package安裝,紀錄使用Workflow&#xA;Abratraction 上一篇pyenv introduction分享使用pyenv控制Python版本, 雖然可以透過pyenv控制Project Local Python版本,除此之外也希望能夠有效區隔各Project的虛擬環境及Package安裝控制, 接下來就開始學習如何使用Poetry來協助建立虛擬環境及安裝Project所需要的各式Package.&#xA;最後順利可以進行Project資料夾的pyenv localPython版本設定,並且透過Poetry建立專案虛擬機器環境及Package管理.&#xA;Method 為了避免在開發Python專案時常遇到版本不同所造成的困擾,所以開始學習使用pinenv, Poetry兩套工具, 以下整理的是自己初次使用的過程,不確定是否正確,但目前為自己可以控制良好運作的一套流程.&#xA;OS: Windows 11, x64 System.&#xA;(1) PowerShell 安裝 pyenv : 確認command prompt可以執行pyenv及環境變數內容正確後,在pyenv下載所需要的Python版本,為了實驗所以下載了兩個不同版本3.12.8及3.11.9&#xA;(2) Scoop安裝pipx,並在pipx下安裝Poetry,並利用pipx建立環境變數後,確認command prompt可以執行Poetry, 這時Poetry出現訊息指出系統中並無安裝Python,在此以前,曾經在系統中自行安裝過Python,後來因為嘗試使用pyenv所以移除原系統中自行安裝的Python, 依據訊息內容,所以在系統中將Python安裝了回去.系統的Python為3.12.8&#xA;(3) 上述兩個安裝工作完成後,系統架構為 Windows 11 + Python 3.12.8, pyenv versions: 3.11.9 , 3.12.8&#xA;當我執行Poetry new DEMO時, DEMO資料夾下的 pyproject.toml 內容會將被設定為 requires-python = &amp;quot;&amp;gt;=3.12&amp;quot;, 接下來我希望讓該Project專案為Python 3.11.9版本, 我使用pyenv local 3.11.9將專案設定為 3.11.9, 此時安裝套件時候提示版本不符, 故修改pyproject.toml內容為requires-python = &amp;quot;&amp;gt;=3.11&amp;quot;,可順利建立虛擬環境及安裝套件.&#xA;Conclusion 經過上述步驟後,可以完成pyenv工具建立Project Local Python版本的控制,例外搭配Poetry建立虛擬環境及Package管理安裝, 所以在Poetry安裝好後,已經將poetry config --list所列出的參數virtualenvs.</description>
     </item>
     <item>
       <title>pyenv introduction</title>

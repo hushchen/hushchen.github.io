@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on HERO</title>
+    <link>https://hushchen.github.io/tags/editor/</link>
+    <description>Recent content in Editor on HERO</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hushchen.github.io/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code Speech</title>
+      <link>https://hushchen.github.io/posts/hushvscode_speech/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushvscode_speech/</guid>
+      <description>Visual Studio Code Speech Visual Studio Code擴充套件Speech&#xA;Abratraction Visual Studio Code Speech是一個擴充套件,可以將程式碼轉換成語音,並且支援多國語言,也可以將語音轉換成文字, 我們可以利用這個套件來進行語音轉文字的紀錄,經過測試後發現其辨識度還算不錯,可以用來做簡單的筆記, 未來可以搭配LLM(語言模型)來進行更進一步的應用,例如筆記文件整理,程式碼撰寫等.&#xA;Method 在Visual Studio Code中安裝Speech擴充套件 VS Code Speech 套件,並且安裝其他種語言包, 例如: Chinese (Simplified), Chinese (Traditional), English, Japanese, Korean等等.&#xA;安裝好套件及語言包後,開啟一個空白的文件,按下 Ctrl+Shift+V 開啟語音輸入功能.&#xA;另外,我們也可以使用 Ctrl+I 來啟動Github Copilot Inline Chat功能, 如開啟此模式時,再次按下 Ctrl+I 可以開啟語音輸入模式對Github Copilot用說的方式下指令.&#xA;Conclusion Visual Studio Code Speech是一個很有趣的擴充套件,可以用來進行語音轉文字的操作,且在測試過程中試著將 網路關閉,語音轉文字功能仍然可以正常工作,這表示語音轉文字的功能是在本地端進行的,這樣就不用擔心隱私問題.&#xA;Reference Visual Studio Code </description>
+    </item>
+  </channel>
+</rss>
