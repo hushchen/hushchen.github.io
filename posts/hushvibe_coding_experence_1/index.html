@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Vibe Coding 初體驗 - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="紀錄第一次使用Github Copilot進行程式碼的撰寫過程" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://hushchen.github.io/posts/hushvibe_coding_experence_1/">
+  <meta property="og:site_name" content="HERO">
+  <meta property="og:title" content="Vibe Coding 初體驗">
+  <meta property="og:description" content="紀錄第一次使用Github Copilot進行程式碼的撰寫過程">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-30T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vibe Coding 初體驗">
+  <meta name="twitter:description" content="紀錄第一次使用Github Copilot進行程式碼的撰寫過程">
+<script src="https://hushchen.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hushchen.github.io/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hushchen.github.io/css/main.d902908ac6e0fab67957de5db5aea1b6455b19ae2ca98eac4c95a4a0fdc02238.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://hushchen.github.io/css/dark.dba4ceb4905f197f476a0330bf8a94c814bb7df6912e8749ed3be58d9efc567b.css"   />
+	
+
+	
+	
+		<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://hushchen.github.io/">HERO</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Vibe Coding 初體驗</h1>
+			<div class="meta">Posted on Mar 30, 2025</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="vibe-coding-初體驗">Vibe Coding 初體驗</h2>
+<blockquote>
+<p>這篇文章是我第一次使用Github Copilot進行程式碼的撰寫過程,紀錄當時的心情與想法.</p>
+</blockquote>
+<h3 id="abratraction">Abratraction</h3>
+<p>隨著2022年ChatGPT上市,GenAI成為了近代科技的新一波創新革命,為人們帶來了許多便利的革新,
+而在軟體程式碼的撰寫上,也從傳統的工程師手動編碼,並需要透過文件查詢等方式來促進開發的效能,
+如今可以透過GenAI的輔助設計,帶來更高效率的軟體開發體驗,無論是撰寫程式碼還是模組測試,都可以利用
+GenAI的輔助來提升開發的效率,我想這就是新一世代科技的變革,我相信這將逐漸成為未來的趨勢,
+並且進一步改變軟體開發過程中程式設計的方式,所以我嘗試使用Github Copilot來協助我撰寫程式碼,
+這篇文章將紀錄我在使用Github Copilot的過程中,Vibe Coding所帶來的體驗與一些問題的解決方法.</p>
+<p>GenAI在各大AI領域公司的產品中有許多不同應用面向發展,Vibe Coding這一個領域的應用也有不少公司正在發展,
+例如Github Copilot、Tabnine、Codeium、Cursor等,這些產品都是用來協助開發者撰寫程式碼的方案,
+我選擇的平台式Github Copilot,因為它與VS Code有良好的整合,對我來說較為熟悉,且使用者生態圈也較為成熟,
+純屬個人偏好,其他產品也各有優勢,大家可以依照自己的需求來選則產品.</p>
+<h3 id="method">Method</h3>
+<p>首先,先紹一下目前撰寫該篇文章的時間點,Github Copilot的價格,如官方連結:</p>
+<p><a href="https://github.com/features/copilot/plans?cft=copilot_li.features_copilot">Github Copilot Price</a></p>
+<p>以個人用戶來說,每月$10USD,或是每年$100USD,如果是學生的話,可以免費使用Github Copilot,
+而企業用戶的話,則是每月$19USD,或是每年$199USD,是否值得購買我個人看法是直接體驗看看就知道是否值得投資.</p>
+<p>所以我利用一個Side Project來體驗使用Github Copilot進行Vibe Coding,
+我規劃了一個Python的Side Project用來進行一些翻譯的工作,幫助我來看一些影片及文件等,
+也順便在這個專案中,學習一下如何使用OpenAI的API來完成相關的任務.</p>
+<p>首先我開啟了VS Code,並且登入Github Copilot的帳號,因為Github Copilot目前已經整合了許多功能,
+這裡不介紹這些功能,只會記錄在這過程中,我如何與Github Copilot互動,並完成程式碼的開發工作,
+登入帳號後,開啟Github Copilot Chat視窗,如下圖:</p>
+<p><img src="/posts/pic/github_copilot_chat_window.png" alt="Github Copilot Chat"></p>
+<p>並直接開始在Chat視窗中與Copilot進行對話,首先我們不應該一開始就找Copilot對話,如同一般設計流程一樣,
+不是剛開始就埋頭苦幹編寫程式碼,而是先進行需求分析,先規劃好架構,例如模組規劃,輸出入介面等等,
+所以一開始我先在ReadMe中寫下需求與模組規劃,再開始與Copilot進行對話,
+並且讓Copilot在專案資料夾中去獲取ReadMe中的內容,所以開始對話時,Copilot也會知道使用者的需求,
+在對話的過程中,都是用自然語言進行對話,讓Copilot產生程式碼,這過程真的很順,Copilot產生程式碼的速度也很快,
+但我想這裡有一個重點要說明,其實<strong>Vibe Coding的過程中,個人體驗是當Copilot幫我產生程式碼後,使用者還是必須理解程式碼的內容</strong>,
+這樣才能知道產生的結果是否符合自己預期的結果,我覺得這個過程是<strong>輔助</strong>,而不是<strong>取代</strong>,
+所以使用者還是必須要有一定的程式設計能力,才能夠使用Github Copilot來進行Vibe Coding.</p>
+<p>很順利的產生了所需要的程式碼,接下來就開始進行測試,測試的過程中發現,其實產生的程式碼非完全可以直接使用,
+還是得需要經過一些Debug的過程,甚至Copilot所使用的API也是舊版的樣式,目前我還不知道如何使用對話方式來改善此問題,
+我試著向Copilot說明已經使用到舊的API,但是它無法完成修正的任務,所以在修正的過程中,我還是有自己查API文件,
+以及使用其他AI工具,例如ChatGPT來進行諮詢API相關的問題,<strong>這個案例也充分表現出,AI工具還是可以互補的</strong>,
+使用上應該好好利用多種工具來協助自己完成工作任務.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>最後,很快速也很順利的完成自己所規劃的Side Project,或許程式的運作模式不是相當完善,但已經足以完成
+自用功能的軟體需求,這也表示Vibe Coding將可以輔助使用者完成一些個人需求的設計,
+也可以協助使用者快速建立軟體樣板模型,在產品開發過程中先完成MVP的設計,未來再透過迭代讓更深入的問題由
+工程師來改善,我相信這將會是未來新一波的軟體開發模式.</p>
+<p>個人對於AI世代的看法,是AI將會成為人類的協作工具,他們可以是助手,顧問,共同開發者的角色,
+AI世代將驅使人類朝更高的目標前進,唯有人們擁有更出色的才能,才能替GenAI產生更高品質的創新資料,
+也才能夠審視AI所產生的資料是否符合人類的需求.</p>
+<h3 id="reference">Reference</h3>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/python">Python</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hushchen-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2025  © Athul |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NN0XH6L3VC');
+        }
+      </script>
+    
+  
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+    <body>
+        
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN0XH6L3VC"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NN0XH6L3VC');
+        }
+      </script>
+    </body>
+</html>

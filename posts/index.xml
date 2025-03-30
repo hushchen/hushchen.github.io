@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding 初體驗</title>
+      <link>https://hushchen.github.io/posts/hushvibe_coding_experence_1/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushvibe_coding_experence_1/</guid>
+      <description>Vibe Coding 初體驗 這篇文章是我第一次使用Github Copilot進行程式碼的撰寫過程,紀錄當時的心情與想法.&#xA;Abratraction 隨著2022年ChatGPT上市,GenAI成為了近代科技的新一波創新革命,為人們帶來了許多便利的革新, 而在軟體程式碼的撰寫上,也從傳統的工程師手動編碼,並需要透過文件查詢等方式來促進開發的效能, 如今可以透過GenAI的輔助設計,帶來更高效率的軟體開發體驗,無論是撰寫程式碼還是模組測試,都可以利用 GenAI的輔助來提升開發的效率,我想這就是新一世代科技的變革,我相信這將逐漸成為未來的趨勢, 並且進一步改變軟體開發過程中程式設計的方式,所以我嘗試使用Github Copilot來協助我撰寫程式碼, 這篇文章將紀錄我在使用Github Copilot的過程中,Vibe Coding所帶來的體驗與一些問題的解決方法.&#xA;GenAI在各大AI領域公司的產品中有許多不同應用面向發展,Vibe Coding這一個領域的應用也有不少公司正在發展, 例如Github Copilot、Tabnine、Codeium、Cursor等,這些產品都是用來協助開發者撰寫程式碼的方案, 我選擇的平台式Github Copilot,因為它與VS Code有良好的整合,對我來說較為熟悉,且使用者生態圈也較為成熟, 純屬個人偏好,其他產品也各有優勢,大家可以依照自己的需求來選則產品.&#xA;Method 首先,先紹一下目前撰寫該篇文章的時間點,Github Copilot的價格,如官方連結:&#xA;Github Copilot Price&#xA;以個人用戶來說,每月$10USD,或是每年$100USD,如果是學生的話,可以免費使用Github Copilot, 而企業用戶的話,則是每月$19USD,或是每年$199USD,是否值得購買我個人看法是直接體驗看看就知道是否值得投資.&#xA;所以我利用一個Side Project來體驗使用Github Copilot進行Vibe Coding, 我規劃了一個Python的Side Project用來進行一些翻譯的工作,幫助我來看一些影片及文件等, 也順便在這個專案中,學習一下如何使用OpenAI的API來完成相關的任務.&#xA;首先我開啟了VS Code,並且登入Github Copilot的帳號,因為Github Copilot目前已經整合了許多功能, 這裡不介紹這些功能,只會記錄在這過程中,我如何與Github Copilot互動,並完成程式碼的開發工作, 登入帳號後,開啟Github Copilot Chat視窗,如下圖:&#xA;並直接開始在Chat視窗中與Copilot進行對話,首先我們不應該一開始就找Copilot對話,如同一般設計流程一樣, 不是剛開始就埋頭苦幹編寫程式碼,而是先進行需求分析,先規劃好架構,例如模組規劃,輸出入介面等等, 所以一開始我先在ReadMe中寫下需求與模組規劃,再開始與Copilot進行對話, 並且讓Copilot在專案資料夾中去獲取ReadMe中的內容,所以開始對話時,Copilot也會知道使用者的需求, 在對話的過程中,都是用自然語言進行對話,讓Copilot產生程式碼,這過程真的很順,Copilot產生程式碼的速度也很快, 但我想這裡有一個重點要說明,其實Vibe Coding的過程中,個人體驗是當Copilot幫我產生程式碼後,使用者還是必須理解程式碼的內容, 這樣才能知道產生的結果是否符合自己預期的結果,我覺得這個過程是輔助,而不是取代, 所以使用者還是必須要有一定的程式設計能力,才能夠使用Github Copilot來進行Vibe Coding.&#xA;很順利的產生了所需要的程式碼,接下來就開始進行測試,測試的過程中發現,其實產生的程式碼非完全可以直接使用, 還是得需要經過一些Debug的過程,甚至Copilot所使用的API也是舊版的樣式,目前我還不知道如何使用對話方式來改善此問題, 我試著向Copilot說明已經使用到舊的API,但是它無法完成修正的任務,所以在修正的過程中,我還是有自己查API文件, 以及使用其他AI工具,例如ChatGPT來進行諮詢API相關的問題,這個案例也充分表現出,AI工具還是可以互補的, 使用上應該好好利用多種工具來協助自己完成工作任務.&#xA;Conclusion 最後,很快速也很順利的完成自己所規劃的Side Project,或許程式的運作模式不是相當完善,但已經足以完成 自用功能的軟體需求,這也表示Vibe Coding將可以輔助使用者完成一些個人需求的設計, 也可以協助使用者快速建立軟體樣板模型,在產品開發過程中先完成MVP的設計,未來再透過迭代讓更深入的問題由 工程師來改善,我相信這將會是未來新一波的軟體開發模式.</description>
+    </item>
     <item>
       <title>Project of Poetry workflow</title>
       <link>https://hushchen.github.io/posts/hushpyenv_poetry_workflow_2/</link>
