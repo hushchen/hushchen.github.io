@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Economics</title>
+      <link>https://hushchen.github.io/tags/economics/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/tags/economics/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Python</title>
       <link>https://hushchen.github.io/tags/python/</link>
