@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <copyright>© Athul</copyright>
-    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hushchen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Development Environment</title>
+      <link>https://hushchen.github.io/posts/hushpython_development_environment/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://hushchen.github.io/posts/hushpython_development_environment/</guid>
+      <description>Python Development Environment Abratraction 前幾篇曾經介紹過pyenv與Poetry的使用,但對於整體開發環境的架構尚不是那麼熟悉, 利用這篇文章好好整理一下自己開發環境的架構,內容包含的作業系統環境及系統Python版本, pyenv管理開發環境的Python版本,與系統版本隔離避免混亂,並利用Poetry管理套件及 建立虛擬機器環境.&#xA;Method (1) 作業系統環境: Windows 11&#xA;(2) 系統Python版本: 3.12.8,用來進行一些作業系統中部份程式所需要的環境,例如Poetry運行所需環境.&#xA;(3) pyenv: 一種隔離管理Python版本的工具,可以將其想像為一種工具箱,內部裝載了不同版本的Python, 當建立專案資料夾時,可以使用pyenv local指令來指定該專案所使用的Python版本.&#xA;(4) Poetry: 是一種Python的套件管理工具,可以用來安裝、管理套件,並且可以建立虛擬環境, 在專案資料夾中,使用Poetry來安裝套件,並且可以使用Poetry shell指令進入虛擬環境, 但因為Poetry改版後,不再推薦使用Poetry shell指令,而是使用Poetry env activate, 或是指令Invoke-Expression (poetry env activate)來啟動虛擬環境.&#xA;(5) 開發環境架構圖如下:&#xA;flowchart TD&#xD;A(作業系統: Windows)&#xD;subgraph A1 [Python Launcher]&#xD;B(py)&#xD;end&#xD;subgraph A2 [System Env.: Python 3.12.8]&#xD;C1(Package Management: pip)&#xD;C1a(List: Null)&#xD;C2(Package Management: pipx)&#xD;C2a(List: Poetry)&#xD;end&#xD;subgraph A3 [Isolation Env.: pyenv-win]&#xD;D1(Python 3.11.9)&#xD;D2(Python 3.</description>
+    </item>
     <item>
       <title>理工男 - 對於川普關稅政策的看法</title>
       <link>https://hushchen.github.io/posts/hushtrend_vs_tax/</link>

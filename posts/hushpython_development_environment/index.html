@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Project of Poetry workflow - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Project Development with Poetry workflow" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Python Development Environment - HERO</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="紀錄Python開發環境架構" />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="https://hushchen.github.io/posts/hushpyenv_poetry_workflow_2/">
+	<meta property="og:url" content="https://hushchen.github.io/posts/hushpython_development_environment/">
   <meta property="og:site_name" content="HERO">
-  <meta property="og:title" content="Project of Poetry workflow">
-  <meta property="og:description" content="Project Development with Poetry workflow">
+  <meta property="og:title" content="Python Development Environment">
+  <meta property="og:description" content="紀錄Python開發環境架構">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-22T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-03-22T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-04-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-26T00:00:00+00:00">
     <meta property="article:tag" content="Python">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Project of Poetry workflow">
-  <meta name="twitter:description" content="Project Development with Poetry workflow">
+  <meta name="twitter:title" content="Python Development Environment">
+  <meta name="twitter:description" content="紀錄Python開發環境架構">
 <script src="https://hushchen.github.io/js/feather.min.js"></script>
 	
 	
@@ -94,37 +94,77 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">Project of Poetry workflow</h1>
-			<div class="meta">Posted on Mar 22, 2025</div>
+			<h1 class="title">Python Development Environment</h1>
+			<div class="meta">Posted on Apr 26, 2025</div>
 		</div>
 		
 
 		<section class="body">
-			<h2 id="project-development-with-poetry-workflow">Project Development with Poetry workflow</h2>
-<blockquote>
-<p>在Python開發專案的過程中,如何操作<code>Poetry</code>來建立虛擬環境及執行程式</p>
-</blockquote>
+			<h2 id="python-development-environment">Python Development Environment</h2>
 <h3 id="abratraction">Abratraction</h3>
-<p>在Python專案開發過程中,使用<code>Poetry</code>來進行套件安裝,虛擬環境建置,以及執行程式,過程中進行套件安裝及管理相當方便,
-在開發過程中,遇到的一些環節,在本篇文章中紀錄,利於未來開發時參考.</p>
+<p>前幾篇曾經介紹過<code>pyenv</code>與<code>Poetry</code>的使用,但對於整體開發環境的架構尚不是那麼熟悉,
+利用這篇文章好好整理一下自己開發環境的架構,內容包含的作業系統環境及系統<code>Python</code>版本,
+<code>pyenv</code>管理開發環境的<code>Python</code>版本,與系統版本隔離避免混亂,並利用<code>Poetry</code>管理套件及
+建立虛擬機器環境.</p>
 <h3 id="method">Method</h3>
-<p>(1) 建立專案,使用指令<code>Poetry new project_name</code>建立專案.</p>
-<p>(2) 搭配<code>pyenv local</code>指令,建立Project Local Python版本的控制.</p>
-<p>(3) 使用<code>Poetry add</code>在<code>pyproject.toml</code>中新增在專案中需要使用的套件.</p>
-<p>(4) 使用<code>Poetry install</code>指令安裝<code>pyproject.toml</code>中列出的所有套件.</p>
-<p>(5) 使用<code>Poetry show</code>指令查看已安裝的套件,<code>--tree</code>參數可以查看套件的相依性.</p>
-<p>(6) 使用<code>Poetry env info</code>指令查看虛擬環境的相關資訊.</p>
-<p>(7) 舊版本使用<code>Poetry shell</code>指令進入虛擬環境,不過在<code>2.0.1</code>版本後已經不再推薦使用此指令,改使用<code>Poetry env activate</code>來進入虛擬環境,
-不過,這裡有一個需要留意的問題,使用<code>powershell</code>遇到沒有啟動的狀況,須改用指令<code>Invoke-Expression (poetry env activate)</code>來啟動虛擬環境.</p>
-<p>(8) 啟動虛擬環境後,使用<code>python --version</code>查看Python版本,此時會發現為<code>pyenv</code>設定的版本.</p>
-<p>(9) 使用<code>python main.py</code>可以直接執行該專案下的<code>main.py</code>程式碼內容.</p>
-<h3 id="conclusion">Conclusion</h3>
-<p>上述指令紀錄開發過程中<code>Poetry</code>常用的指令.</p>
+<p>(1) 作業系統環境: <code>Windows 11</code></p>
+<p>(2) 系統<code>Python</code>版本: <code>3.12.8</code>,用來進行一些作業系統中部份程式所需要的環境,例如<code>Poetry</code>運行所需環境.</p>
+<p>(3) <code>pyenv</code>: 一種隔離管理<code>Python</code>版本的工具,可以將其想像為一種工具箱,內部裝載了不同版本的<code>Python</code>,
+當建立專案資料夾時,可以使用<code>pyenv local</code>指令來指定該專案所使用的<code>Python</code>版本.</p>
+<p>(4) <code>Poetry</code>: 是一種Python的套件管理工具,可以用來安裝、管理套件,並且可以建立虛擬環境,
+在專案資料夾中,使用<code>Poetry</code>來安裝套件,並且可以使用<code>Poetry shell</code>指令進入虛擬環境,
+但因為<code>Poetry</code>改版後,不再推薦使用<code>Poetry shell</code>指令,而是使用<code>Poetry env activate</code>,
+或是指令<code>Invoke-Expression (poetry env activate)</code>來啟動虛擬環境.</p>
+<p>(5) 開發環境架構圖如下:</p>
+<pre class="mermaid">
+    flowchart TD
+    A(作業系統: Windows)
+
+    subgraph A1 [Python Launcher]
+        B(py)
+    end
+
+    subgraph A2 [System Env.: Python 3.12.8]
+        C1(Package Management: pip)
+        C1a(List: Null)
+        C2(Package Management: pipx)
+        C2a(List: Poetry)
+    end
+
+    subgraph A3 [Isolation Env.: pyenv-win]
+        D1(Python 3.11.9)
+        D2(Python 3.12.8)
+    end
+
+    subgraph A4 [Dev. Folder: Project A]
+        E1(pyenv local 3.11.9)
+        E2(Poetry Visual Machine)
+        E3(Poetry Install Packages)
+    end
+
+
+    A --&gt; A1
+    A --&gt; A3
+    A1 --&gt; A2
+    C1 --&gt; C1a
+    C2 --&gt; C2a
+    D1 --&gt; E1
+    C2a --&gt; E2
+    C2a --&gt; E3
+    linkStyle 0 stroke:yellow,stroke-width:3px,fill:none,opacity:1.5
+    linkStyle 1 stroke:yellow,stroke-width:3px,fill:none,opacity:1.5
+    linkStyle 2 stroke:yellow,stroke-width:3px,fill:none,opacity:1.5
+    linkStyle 5 stroke:red,stroke-width:3px,fill:none,opacity:1.5
+    linkStyle 6 stroke:red,stroke-width:3px,fill:none,opacity:1.5
+    linkStyle 7 stroke:red,stroke-width:3px,fill:none,opacity:1.5
+</pre>
+    <h3 id="conclusion">Conclusion</h3>
+<p>總結,利用此篇文章,將自己開發環境的架構做一個整理,包含:
+(1) 作業系統環境,系統<code>Python</code>版本,在Windows系統中,使用<code>python launcher</code>工具<code>py</code>來切換系統多種Python版本.</p>
+<p>(2) <code>pyenv</code>是用來進行隔離管理<code>Python</code>版本，確保不同專案之間的相依性不會互相影響,像是一個工具箱內部
+包含多種版本的<code>Python</code>,當建立專案資料夾時,可以使用<code>pyenv local</code>指令來指定該專案所使用的<code>Python</code>版本.</p>
+<p>(3) <code>Poetry</code>是用來進行套件管理的工具,可以用來安裝、管理套件,並且可以建立虛擬環境.</p>
 <h3 id="reference">Reference</h3>
-<ol>
-<li><a href="https://blog.kyomind.tw/python-poetry/">Python 套件管理器——Poetry 完全入門指南</a></li>
-<li><a href="https://realnewbie.com/coding/python/poetry-shell-command-missing-poetry-2-0-1-env-activate/">Poetry 2.0.1 改用 poetry env activate</a></li>
-</ol>
 
 		</section>
 
@@ -195,6 +235,11 @@
 <script>
   feather.replace()
 </script></div>
+        
+            <script type="module">
+                import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+                mermaid.initialize({ startOnLoad: true });
+            </script>
         
     </body>
     <body>
